@@ -1,0 +1,105 @@
+.moving-text:hover {
+    animation-play-state: running;
+}
+
+.scroll-gold {
+  scrollbar-color: #FFDC90 #401A1D;
+  scrollbar-width: thin;
+}
+
+@keyframes marquee{
+  0% { transform: translateX(0); }
+  10% { transform: translateX(0); }
+  45% { transform: translateX(calc(-100% + 9.5em)); }
+  55% { transform: translateX(calc(-100% + 9.5em)); }
+  90% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes marquee-current-song{
+  0% { transform: translateX(0); }
+  10% { transform: translateX(0); }
+  45% { transform: translateX(calc(-100% + 30vh)); }
+  55% { transform: translateX(calc(-100% + 30vh)); }
+  90% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.moving-text{
+    animation: marquee 15s linear infinite;
+    animation-play-state: paused;
+}
+
+.playing-song-animation {
+    animation: marquee-current-song 15s linear infinite;
+    animation-play-state: running;
+}
+
+.playing-song-animation:hover {
+    animation-play-state: paused;
+}
+
+.icon-colour{
+    filter: invert(66%) sepia(67%) saturate(47%) hue-rotate(202deg) brightness(90%) contrast(87%);
+}
+
+.icon-colour:hover {
+    filter: invert(77%) sepia(72%) saturate(237%) hue-rotate(348deg) brightness(101%) contrast(101%);
+}
+
+.icon-set {
+    filter: invert(77%) sepia(72%) saturate(237%) hue-rotate(348deg) brightness(101%) contrast(101%);
+    transform: scale(1.05);
+}
+
+.dropdown-menu {
+    padding-top: 0px;
+    maxHeight: 40vh;
+    width: 10vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.selectedRepertoireItem{
+    background: #681D20 !important;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+input[type=radio]:checked + label > img {
+    border: 4px outset rgb(255, 220, 144);
+}
+
+.form-range::-webkit-slider-thumb {
+  background: #FFDC90;
+}
+
+.form-range::-moz-range-thumb {
+  background: #FFDC90;
+}
+
+.form-range::-ms-thumb {
+  background: #FFDC90;
+}
+
+-webkit-slider-thumb:active {
+    background-color: #FFDC90;
+}
+
+-webkit-slider-thumb,
+.form-range:focus::-webkit-slider-thumb,
+.form-range:focus::-moz-range-thumb,
+.form-range:focus::-ms-thumb {
+    box-shadow: #FFDC90;
+}
+
+.form-range::-webkit-slider-runnable-track {
+    background-color: #943230;
+}
+
+.form-range::-moz-range-track {
+  background-color: #943230;
+}
