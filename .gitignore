@@ -13,3 +13,4 @@ uploads/
 .idea/
 bard.properties
 .gettext.json
+gradle/wrapper
